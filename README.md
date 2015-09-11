@@ -58,9 +58,6 @@ I would like to play a two-player game
 ## Job List
 
 - [ ]
-- [ ]
-- [ ]
-- [ ]
 
 ## Still to complete/refactor
 

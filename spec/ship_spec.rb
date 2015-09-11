@@ -18,7 +18,8 @@ describe 'Ship' do
 
   context 'placing a ship' do
     it 'makes the correct number of coords' do
-      expect( Ship.new(3).make_possible_coords([0,0], :E)).to eq([[0,0], [1,0], [2,0]])
+      ship=Ship.new(3)
+      expect(ship.make_possible_coords([0,0], :E)).to eq([[0,0], [1,0], [2,0]])
     end
     it 'can be placed' do
       place=[[0, 0], [1, 0], [2, 0]]
