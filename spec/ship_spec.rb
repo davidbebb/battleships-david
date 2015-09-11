@@ -44,9 +44,17 @@ describe 'Ship' do
     end
     it 'reports sunk' do
       ship = Ship.new(1)
-      ship.position_ship([1, 0])
+      ship.position_ship([[1, 0]])
       ship.shoot([1,0])
-      expect(ship.sunk?).to eq true
+      ship.sunk?
+      expect(ship.sunk).to eq true
+    end
+    it 'reports not sunk' do
+      ship = Ship.new(1)
+      ship.position_ship([[0, 0]])
+      ship
+      ship.sunk?
+      expect(ship.sunk).to eq false
     end
   end
 end

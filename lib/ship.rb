@@ -16,8 +16,10 @@ class Ship
     possible_ship_place = []
     @length.times do
       possible_ship_place << [x, y]
-      step ={ N: ->(x,y){[x, y-=1]}, S: ->(x,y){[x, y+=1]},
-              E: ->(x,y){[x+=1, y]}, W: ->(x,y){[x-=1, y]} }
+      step ={ N: ->(x,y){[x, y-=1]},
+              S: ->(x,y){[x, y+=1]},
+              E: ->(x,y){[x+=1, y]},
+              W: ->(x,y){[x-=1, y]} }
       new_coord = step[direction].call(x,y)
       x,y = new_coord[0],new_coord[1]
     end
