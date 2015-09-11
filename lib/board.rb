@@ -20,4 +20,7 @@ class Board
     return true
   end
 
+  def have_ships_overlapped
+  end
+
 end
