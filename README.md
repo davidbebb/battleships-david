@@ -62,11 +62,6 @@ I would like to play a two-player game
 - [ ]
 - [ ]
 
-## Collaborators
-
-- David Bebb (http://www.github.com/USERNAME)
-- Catherine Stephenson (http://www.github.com/USERNAME)
-
 ## Still to complete/refactor
 
 - [ ]
